@@ -139,18 +139,20 @@
 			})
 			.on('click', 'a', function(event) {
 
-				var href = $(this).attr('href');
+				var $link = $(this);
+				var href = $link.attr('href');
 
 				event.preventDefault();
 				event.stopPropagation();
 
-				// Hide.
+				// Hide menu.
 					$menu._hide();
 
-				// Redirect.
-					if (href == '#menu')
+				// Don't redirect for modal links or menu toggle.
+					if (href == '#menu' || $link.attr('data-modal'))
 						return;
 
+				// Redirect for regular links.
 					window.setTimeout(function() {
 						window.location.href = href;
 					}, 350);
