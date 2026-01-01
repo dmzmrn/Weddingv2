@@ -1,0 +1,475 @@
+/* Wedding Modals Styles */
+
+/* Hide Menu Navigation */
+#header nav {
+	display: none !important;
+}
+
+#menu {
+	display: none !important;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 10003;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	backdrop-filter: blur(4px);
+	padding: 0;
+}
+
+.modal-overlay.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+}
+
+/* Modal Close Wrapper */
+.modal-close-wrapper {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	z-index: 10005;
+	pointer-events: none;
+}
+
+.modal-close-wrapper .modal-close {
+	pointer-events: all;
+	position: relative;
+}
+
+/* Modal Close Button */
+.modal-close {
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	font-size: 1.8em;
+	color: #333333;
+	cursor: pointer;
+	width: auto;
+	height: auto;
+	min-width: 1.5em;
+	min-height: 1.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: color 0.2s ease, transform 0.2s ease;
+	line-height: 1;
+	padding: 0.2em;
+	font-weight: 400;
+	font-family: inherit;
+	text-decoration: none;
+	box-shadow: none;
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal-close:hover {
+	background: transparent;
+	border: none;
+	color: #f2849e;
+	transform: scale(1.1);
+	box-shadow: none;
+	opacity: 1;
+}
+
+/* Modal Container */
+.modal-container {
+	position: relative;
+	background: #ffffff;
+	border-radius: 16px;
+	max-width: 90%;
+	width: 600px;
+	max-height: 90vh;
+	overflow: hidden;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+	transform: scale(0.9);
+	transition: transform 0.3s ease;
+	margin: 2em;
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-overlay.active .modal-container {
+	transform: scale(1);
+}
+
+/* Modal Content */
+.modal-content {
+	padding: 3em 2.5em 2.5em;
+	overflow-y: auto;
+	flex: 1;
+}
+
+.modal-content h2 {
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	color: #333;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+.modal-content h3 {
+	color: #555;
+	font-weight: 400;
+	margin-top: 1.5em;
+	margin-bottom: 0.75em;
+	font-size: 1.2em;
+}
+
+.modal-content p {
+	color: #666;
+	line-height: 1.8;
+	margin-bottom: 1.5em;
+}
+
+/* Our Story Modal */
+.story-timeline {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.story-timeline li {
+	padding: 1.5em 0;
+	border-bottom: 1px solid #eee;
+}
+
+.story-timeline li:last-child {
+	border-bottom: none;
+}
+
+.story-timeline .timeline-date {
+	font-weight: 600;
+	color: #9b88b2;
+	margin-bottom: 0.5em;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.story-timeline .timeline-content {
+	color: #666;
+	line-height: 1.8;
+}
+
+/* Wedding Details Modal */
+.wedding-details-section {
+	margin-bottom: 2em;
+}
+
+.wedding-details-section:last-child {
+	margin-bottom: 0;
+}
+
+.detail-item {
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #eee;
+}
+
+.detail-item:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.detail-item strong {
+	color: #333;
+	display: block;
+	margin-bottom: 0.5em;
+	font-weight: 500;
+	font-size: 1.1em;
+}
+
+.detail-item span {
+	color: #666;
+	display: block;
+	line-height: 1.8;
+}
+
+/* Color Palette Bar */
+.color-palette-bar {
+	display: flex;
+	margin-top: 1.5em;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	height: 60px;
+}
+
+.color-palette-segment {
+	flex: 1;
+	transition: transform 0.3s ease;
+}
+
+.color-palette-segment:hover {
+	transform: scaleY(1.1);
+}
+
+.color-palette-segment.grey {
+	background: linear-gradient(135deg, #e8e8e8 0%, #c0c0c0 100%);
+}
+
+.color-palette-segment.lilac {
+	background: linear-gradient(135deg, #d4a5d9 0%, #b88fc1 100%);
+}
+
+.color-palette-segment.pastel-blue {
+	background: linear-gradient(135deg, #a8d5e2 0%, #8bc5d4 100%);
+}
+
+/* FAQ Accordion */
+.faq-accordion {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.faq-item {
+	border-bottom: 1px solid #eee;
+}
+
+.faq-item:last-child {
+	border-bottom: none;
+}
+
+.faq-question {
+	padding: 1.5em 0;
+	cursor: pointer;
+	position: relative;
+	color: #333;
+	font-weight: 500;
+	transition: color 0.2s ease;
+	user-select: none;
+}
+
+.faq-question:hover {
+	color: #9b88b2;
+}
+
+.faq-question::after {
+	content: '+';
+	position: absolute;
+	right: 0;
+	font-size: 1.5em;
+	color: #9b88b2;
+	transition: transform 0.3s ease;
+	font-weight: 300;
+}
+
+.faq-item.active .faq-question::after {
+	transform: rotate(45deg);
+}
+
+.faq-answer {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease, padding 0.3s ease;
+	padding: 0;
+	color: #666;
+	line-height: 1.8;
+}
+
+.faq-item.active .faq-answer {
+	max-height: 500px;
+	padding: 0 0 1.5em;
+}
+
+/* RSVP Form */
+.rsvp-form {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.rsvp-form .field {
+	margin-bottom: 1.5em;
+}
+
+.rsvp-form label {
+	display: block;
+	margin-bottom: 0.5em;
+	color: #333;
+	font-weight: 500;
+}
+
+.rsvp-form input[type="text"],
+.rsvp-form input[type="email"] {
+	width: 100%;
+	padding: 0.75em;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-size: 1em;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+	font-family: inherit;
+}
+
+.rsvp-form input[type="text"]:focus,
+.rsvp-form input[type="email"]:focus {
+	outline: none;
+	border-color: #9b88b2;
+	box-shadow: 0 0 0 3px rgba(155, 136, 178, 0.1);
+}
+
+.rsvp-form .radio-group {
+	margin-top: 1em;
+}
+
+.rsvp-form .radio-group label {
+	text-align: center;
+	margin-bottom: 1em;
+	display: block;
+	font-weight: 600;
+	color: #333;
+	font-size: 1.1em;
+}
+
+.rsvp-form .radio-options {
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+	flex-wrap: wrap;
+	margin-bottom: 2em;
+}
+
+.rsvp-form .radio-option {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	cursor: pointer;
+}
+
+.rsvp-form .radio-option input[type="radio"] {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	accent-color: #9b88b2;
+}
+
+.rsvp-form .radio-option label {
+	margin: 0;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.rsvp-form .form-actions {
+	display: flex;
+	gap: 1em;
+	justify-content: center;
+	margin-top: 2em;
+}
+
+.rsvp-form button[type="submit"],
+.rsvp-form button[type="reset"],
+.rsvp-form input[type="submit"],
+.rsvp-form input[type="reset"] {
+	padding: 0.75em 2em;
+	border: none;
+	border-radius: 8px;
+	font-size: 1em;
+	cursor: pointer;
+	transition: background-color 0.2s ease, transform 0.2s ease;
+	font-family: inherit;
+	font-weight: 500;
+}
+
+.rsvp-form button[type="submit"],
+.rsvp-form input[type="submit"] {
+	background-color: #9b88b2;
+	color: white;
+}
+
+.rsvp-form button[type="submit"]:hover,
+.rsvp-form input[type="submit"]:hover {
+	background-color: #8a7aa1;
+	transform: translateY(-2px);
+}
+
+.rsvp-form button[type="reset"],
+.rsvp-form input[type="reset"] {
+	background-color: #e8e8e8;
+	color: #333;
+}
+
+.rsvp-form button[type="reset"]:hover,
+.rsvp-form input[type="reset"]:hover {
+	background-color: #d0d0d0;
+	transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 736px) {
+	.modal-overlay {
+		padding: 1em;
+		align-items: flex-start;
+		padding-top: 2em;
+	}
+
+	.modal-container {
+		width: calc(100% - 2em);
+		max-width: calc(100% - 2em);
+		margin: 0;
+		max-height: calc(100vh - 4em);
+		border-radius: 12px;
+	}
+
+	.modal-close-wrapper {
+		top: 0.75em;
+		right: 0.75em;
+	}
+
+	.modal-close {
+		font-size: 1.5em;
+		color: #333333;
+	}
+
+	.modal-content {
+		padding: 2em 1.5em 1.5em;
+	}
+
+	.modal-content h2 {
+		font-size: 1.5em;
+	}
+
+	.color-palette-bar {
+		height: 50px;
+	}
+
+	.rsvp-form .radio-options {
+		gap: 1.5em;
+	}
+
+	.rsvp-form .actions {
+		flex-direction: column;
+	}
+
+	.rsvp-form .actions li {
+		width: 100%;
+	}
+
+	.rsvp-form .actions li .button {
+		width: 100%;
+	}
+}
+
+/* Logo Icon Styling */
+#header .logo .symbol i.fas,
+#header .logo .symbol i.fa-solid {
+	font-size: 2em;
+	color: inherit;
+	display: block;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+}
+
