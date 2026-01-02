@@ -39,22 +39,26 @@
 			<div class="wedding-details-section">
 				<div class="detail-item">
 					<strong>Date & Time</strong>
-					<span>Saturday, June 15, 2024 at 4:00 PM</span>
-				</div>
-				<div class="detail-item">
-					<strong>Venue</strong>
-					<span>The Garden Estate<br>123 Beautiful Lane<br>Lovely City, State 12345</span>
-					<ul class="actions" style="margin-top: 1em;">
-						<li><a href="https://www.google.com/maps/search/?api=1&query=The+Garden+Estate+123+Beautiful+Lane+Lovely+City+State+12345" target="_blank" class="button primary">View on Google Maps</a></li>
-					</ul>
+					<span>Saturday, April 18, 2026 at 9:00 AM</span>
 				</div>
 				<div class="detail-item">
 					<strong>Ceremony</strong>
-					<span>Outdoor ceremony in the rose garden, weather permitting. Seating will be provided.</span>
-				</div>
+					<span><b>Our Lady of Lourdes Parish Church</b>
+						<br>Tagaytay-Nasugbu Highway.
+						<br>Tagaytay City, 4120 Cavite
+					</span>
+					<ul class="actions" style="margin-top: 1em;">
+						<li><a href="https://www.google.com/maps/search/?api=1&query=Our+Lady+of+Lourdes+Parish+Church+-+Silang+Junction+North,+Tagaytay+City,+Cavite+(Diocese+of+Imus)" target="_blank" class="button primary">View on Google Maps</a></li>
+					</ul>					
+				</div>				
 				<div class="detail-item">
-					<strong>Reception</strong>
-					<span>Cocktail hour to follow immediately after the ceremony, followed by dinner and dancing in the grand ballroom.</span>
+					<strong>Venue</strong>
+					<span><b>Kairos Events Venue Tagaytay</b>
+						<br>RSM Building, 222 Santa Rosa - Tagaytay Rd
+						<br>Tagaytay City, 4120 Cavite</span>
+					<ul class="actions" style="margin-top: 1em;">
+						<li><a href="https://www.google.com/maps/search/?api=1&query=Kairos+Events+Venue+Tagaytay" target="_blank" class="button primary">View on Google Maps</a></li>
+					</ul>
 				</div>
 				<div class="detail-item">
 					<strong>Dress Code</strong>
@@ -76,37 +80,40 @@
 				<li class="faq-item">
 					<div class="faq-question">What time should I arrive?</div>
 					<div class="faq-answer">
-						<p>Please arrive 30 minutes before the ceremony begins at 4:00 PM. This will give you time to find parking, sign our guest book, and find your seat.</p>
+						<p>Please arrive 30 minutes before the ceremony begins at 9:00 AM. This will give you time to find parking, and find your seat.</p>
 					</div>
 				</li>
 				<li class="faq-item">
 					<div class="faq-question">Is there parking available?</div>
 					<div class="faq-answer">
-						<p>Yes, complimentary valet parking will be available at the venue. There is also ample street parking nearby.</p>
+						<p>Yes, parking will be available for both the ceremony and reception at the venue. There is also ample street parking nearby.</p>
 					</div>
 				</li>
 				<li class="faq-item">
-					<div class="faq-question">What if I have dietary restrictions?</div>
+					<div class="faq-question">May I bring a plus one?</div>
 					<div class="faq-answer">
-						<p>Please let us know about any dietary restrictions when you RSVP. We'll make sure the catering team can accommodate your needs.</p>
+						<p>
+							Due to limited seating, we kindly ask that you inform us in advance if you plan to bring a plus one.
+							This will help us coordinate properly and ensure that seating arrangements can be adjusted accordingly.
+							Thank you for your understanding.
+						</p>
 					</div>
 				</li>
 				<li class="faq-item">
-					<div class="faq-question">Can I bring a plus one?</div>
+					<div class="faq-question">Will the reception be held indoors?</div>
 					<div class="faq-answer">
-						<p>Plus ones are welcome! Please include their name in your RSVP so we can properly plan for seating and meals.</p>
-					</div>
-				</li>
-				<li class="faq-item">
-					<div class="faq-question">Will the ceremony be outdoors?</div>
-					<div class="faq-answer">
-						<p>Yes, weather permitting. We have a beautiful backup location indoors if needed. We'll send updates via email if the weather requires a change.</p>
+						<p>
+							Yes. The reception will be held in an air-conditioned indoor venue for the comfort of our guests.
+						</p>
 					</div>
 				</li>
 				<li class="faq-item">
 					<div class="faq-question">What's the best way to contact you?</div>
 					<div class="faq-answer">
-						<p>You can reach us at wedding@example.com or call (555) 123-4567. Please allow 24-48 hours for a response.</p>
+						<p>
+							For any questions or clarifications, you may contact us through our Facebook accounts.
+							Kindly allow 24–48 hours for a response. Thank you.
+						</p>
 					</div>
 				</li>
 			</ul>

@@ -11,9 +11,41 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/wedding-modals.css" />
+		<link rel="stylesheet" href="assets/css/envelope-animation.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<!-- Envelope Animation Overlay -->
+		<div id="envelope-overlay" class="envelope-overlay">
+			<div class="hearts">
+				<div class="heart"></div>
+				<div class="heart"></div>
+				<div class="heart"></div>
+				<div class="heart"></div>
+				<div class="heart"></div>
+				<div class="heart"></div>
+				<div class="heart"></div>
+				<div class="heart"></div>
+				<div class="heart"></div>
+				<div class="heart"></div>
+			</div>
+			<div class="container">
+				<div class="envelope" id="envelope">
+					<div class="envelope-base">
+						<div class="envelope-base-shadow"></div>
+					</div>
+					<div class="envelope-flap"></div>
+					<div class="card">
+						<div class="card-content">
+							<h1>You’re Invited</h1>
+							<p>April 18, 2026</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main Website Content (Hidden Initially) -->
+		<div id="main-website" class="main-website-hidden">
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -139,6 +171,7 @@
 						</div>
 					</footer>-->
 			</div>
+		</div>
 
 		<!-- Modals -->
 		<div id="modal-overlay" class="modal-overlay">
@@ -153,6 +186,7 @@
 		</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/envelope-animation.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
