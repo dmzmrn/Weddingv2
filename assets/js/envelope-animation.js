@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         autoRedirectTimer = setTimeout(function() {
             showMainWebsite();
-        }, 1500);
+        }, 2000);
     });
 
     // Clear timer when mouse leaves (optional - remove if you want timer to continue)
