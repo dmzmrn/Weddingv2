@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 /* Envelope Animation Overlay Styles */
 .envelope-overlay {
     position: fixed;
@@ -60,7 +61,24 @@
 
 @media (max-width: 480px) {
     .envelope {
-        max-width: 90vw;
+        max-width: 600px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .envelope {
+        max-width: 700px; /* Increased for tablet */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .envelope {
+        min-height: 600px; /* Increased for medium desktop */
+    }
+}
+
+@media (min-width: 1025px) {
+    .envelope {
+        min-height: 670px; /* Increased for large desktop */
     }
 }
 
@@ -158,7 +176,7 @@
     z-index: 99;
 }
 
-/* Inner Card - Elegant Wedding Invitation Paper */
+/* Inner Card - With bordered style from CodePen, original colors */
 .card {
     width: calc(100% - 2rem);
     left: 1rem;
@@ -177,7 +195,7 @@
     color: #2a2a2a;
     position: absolute;
     height: 500px;
-    min-height: 250%; /* Much taller to show full image */
+    min-height: 350%; /* Increased from 250% to 350% for more content space */
     z-index: 1;
     transition: all 0.4s ease-in-out;
     top: 100%;
@@ -193,25 +211,25 @@
 @media (max-width: 480px) {
     .card {
         padding: 2rem 1.5rem;
-        min-height: 280%; /* Extra tall for mobile */
+        min-height: 380%; /* Increased for mobile */
     }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
     .card {
-        min-height: 270%; /* Tablet */
+        min-height: 370%; /* Increased for tablet */
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .card {
-        min-height: 260%; /* Medium desktop */
+        min-height: 360%; /* Increased for medium desktop */
     }
 }
 
 @media (min-width: 1025px) {
     .card {
-        min-height: 240%; /* Large desktop */
+        min-height: 340%; /* Increased for large desktop */
     }
 }
 
@@ -227,65 +245,123 @@
     top: 100% !important;
 }
 
-/* Card Content */
+/* Card Content - Bordered style inspired by CodePen, original colors */
 .card-content {
     text-align: center;
     width: 100%;
     min-height: auto;
-    padding: 30px 20px 60px; /* Reduced top padding */
+    padding: 50px 40px 80px; /* Increased padding for more content space */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     position: relative;
-
-    /* Lilac paper */
+    
+    /* Elegant border from CodePen design with original lilac background */
     background: #f3ecfa;
-    border-radius: 16px;
+    border: 5px solid #9575cd;
+    border-radius: 8px;
+    overflow: visible; /* Changed to visible for corner decorations */
 }
 
-
-/* Minimal decorative divider */
-.card-content::before {
-    content: '';
-    width: 70px;
-    height: 1px;
-    margin-bottom: 15px; /* Reduced spacing */
-    background-color: rgba(149, 117, 205, 0.4);
+/* Decorative corner images - top right */
+.card-content .img-top {
+    position: absolute;
+    top: -110px;
+    right: -70px;
+    height: 350px;
+    width: auto;
+    transform: rotate(-30deg);
+    opacity: 0.85; /* Increased opacity since it's in front */
+    pointer-events: none;
+    z-index: 10;
 }
 
-/* Heading */
+/* Decorative corner images - bottom left */
+.card-content .img-bottom {
+    position: absolute;
+    bottom: -115px;
+    left: -70px;
+    height: 350px;
+    width: auto;
+    transform: rotate(-212deg);
+    opacity: 0.85; /* Increased opacity since it's in front */
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Heading - Large elegant style from CodePen, original colors */
 .card h1 {
-    font-size: clamp(26px, 5.5vw, 40px); /* Slightly smaller */
+    font-size: clamp(32px, 6vw, 48px);
     color: #5d4373;
-    margin-bottom: 8px; /* Reduced */
-    font-weight: 300;
-    font-family: 'Georgia', 'Times New Roman', serif;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-family: "Dancing Script", cursive;
     letter-spacing: 0.16em;
-    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+/* Introductory paragraph - original colors */
+.card p {
+    font-size: clamp(14px, 3vw, 16px);
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-family: "Dancing Script", cursive;
+    font-style: italic;
+}
+
+/* Names styling - inspired by CodePen's large names, original colors */
+.card .names {
+    font-size: clamp(10px, 7vw, 60px);
+    color: #5d4373;
+    margin: 0; /* Remove vertical margin */
+    display: inline; /* Display inline instead of block */
+    font-weight: 300;
+    font-family: "Dancing Script", cursive;
+    letter-spacing: 0.1em;
     line-height: 1.2;
 }
 
-/* Paragraph */
-.card p {
-    font-size: clamp(13px, 2.8vw, 15px); /* Slightly smaller */
-    color: #555;
-    margin-bottom: 15px; /* Reduced */
-    line-height: 1.6;
-    font-family: 'Georgia', 'Times New Roman', serif;
+.card .ampersand {
+    font-size: clamp(25px, 6vw, 50px);
+    color: #5d4373;
+    margin: 0 10px; /* Horizontal margin only */
+    display: inline; /* Display inline instead of block */
+    font-family: "Dancing Script", cursive;
+}
+
+/* Save the date section - original colors */
+.card .save-date {
+    font-size: clamp(16px, 3.5vw, 18px);
+    color: #5d4373;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-family: "Dancing Script", cursive;
     font-style: normal;
+    text-transform: uppercase;
     letter-spacing: 0.08em;
 }
 
-/* Animated couple - positioned to start at envelope flap level */
+.card .date {
+    font-size: clamp(18px, 4vw, 22px);
+    color: #555;
+    margin: 10px 0;
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+}
+
+
+/* Animated couple image */
 .animated-couple {
-    margin-top: 10px; /* Minimal top margin */
-    margin-bottom: 60px; /* Space at bottom */
+    margin-top: 20px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Changed from center to flex-start */
+    align-items: flex-start;
     width: 100%;
     position: relative;
+    z-index: 1;
 }
 
 .animated-couple img {
@@ -293,20 +369,23 @@
     width: 90%;
     height: auto;
     opacity: 0.95;
-    aspect-ratio: 3 / 4; /* Maintain 768:1024 ratio */
+    aspect-ratio: 3 / 4;
     object-fit: contain;
     display: block;
+    border-radius: 8px;
+    border: 3px solid rgba(149, 117, 205, 0.3);
 }
 
 /* Mobile refinement */
 @media (max-width: 480px) {
     .card-content {
-        padding: 25px 60px 50px; /* Compact padding */
+        padding: 30px 20px 50px;
+        border-width: 4px;
     }
 
     .card h1 {
-        font-size: clamp(22px, 6vw, 28px);
-        margin-bottom: 6px;
+        font-size: clamp(26px, 6vw, 32px);
+        margin-bottom: 8px;
     }
 
     .card p {
@@ -314,79 +393,108 @@
         margin-bottom: 12px;
     }
 
-    .card-content::before {
-        margin-bottom: 12px;
+    .card .names {
+        font-size: clamp(10px, 7vw, 44px);
+    }
+
+    .card .ampersand {
+        font-size: clamp(20px, 6vw, 38px);
     }
 
     .animated-couple {
-        margin-top: 8px;
-        margin-bottom: 50px;
+        margin-top: 15px;
+        margin-bottom: 25px;
     }
 
     .animated-couple img {
-        max-width: 190px;
+        max-width: 180px;
         width: 85%;
+        border-width: 2px;
+    }
+
+    /* Smaller corner decorations on mobile */
+    .card-content .img-top {
+        height: 250px;
+        top: -80px;
+        right: -50px;
+    }
+
+    .card-content .img-bottom {
+        height: 250px;
+        bottom: -85px;
+        left: -50px;
     }
 }
 
 /* Tablet refinement */
 @media (min-width: 481px) and (max-width: 768px) {
     .card-content {
-        padding: 28px 18px 55px;
+        padding: 35px 25px 55px;
     }
 
     .card h1 {
-        font-size: clamp(24px, 5.5vw, 34px);
-        margin-bottom: 7px;
+        font-size: clamp(28px, 5.5vw, 38px);
     }
 
-    .card p {
-        margin-bottom: 13px;
+    .card .names {
+        font-size: clamp(20px, 7vw, 52px);
     }
 
     .animated-couple {
-        margin-top: 9px;
-        margin-bottom: 55px;
+        margin-top: 18px;
+        margin-bottom: 28px;
     }
 
     .animated-couple img {
-        max-width: 210px;
+        max-width: 200px;
         width: 88%;
+    }
+
+    /* Medium corner decorations on tablet */
+    .card-content .img-top {
+        height: 300px;
+        top: -95px;
+        right: -60px;
+    }
+
+    .card-content .img-bottom {
+        height: 300px;
+        bottom: -100px;
+        left: -60px;
     }
 }
 
 /* Desktop refinement */
 @media (min-width: 769px) and (max-width: 1024px) {
     .card-content {
-        padding: 30px 100px 60px;
+        padding: 40px 30px 60px;
     }
 
     .animated-couple {
-        margin-top: 10px;
-        margin-bottom: 60px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     .animated-couple img {
-        max-width: 230px;
+        max-width: 220px;
     }
 }
 
 /* Large desktop */
 @media (min-width: 1025px) {
     .card-content {
-        padding: 32px 110px 65px;
+        padding: 45px 35px 65px;
     }
 
     .animated-couple {
-        margin-top: 12px;
-        margin-bottom: 65px;
+        margin-top: 22px;
+        margin-bottom: 32px;
     }
 
     .animated-couple img {
-        max-width: 250px;
+        max-width: 240px;
     }
 }
-
 
 /* Open Button */
 .open-button {
@@ -401,7 +509,7 @@
         0 4px 12px rgba(149, 117, 205, 0.3),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
-    font-family: 'Georgia', 'Times New Roman', serif;
+    font-family: "Dancing Script", cursive;
     white-space: nowrap;
     font-weight: 500;
     letter-spacing: 0.15em;
