@@ -62,7 +62,7 @@
 				</div>
 				<div class="detail-item">
 					<strong>Dress Code</strong>
-					<span>Garden party attire. We kindly request semi-formal dress. Please avoid wearing white.</span>
+					<span>We kindly request semi-formal dress. Please avoid wearing white.</span>
 				</div>
 			</div>
 			<div style="margin-top: 2em;">
