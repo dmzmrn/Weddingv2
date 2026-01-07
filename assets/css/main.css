@@ -99,7 +99,13 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: transparent;
+		background-image: url('../../images/background.png'); 
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		min-height: 100vh;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
