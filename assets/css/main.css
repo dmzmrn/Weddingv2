@@ -101,12 +101,44 @@ input, select, textarea {
 	body {
 		background: transparent;
 		background-image: url('../../images/background.png'); 
-		background-size: cover;
+		background-size: cover; /* Fills screen nicely */
 		background-position: center center;
-		background-repeat: no-repeat;
+		background-repeat: repeat;
 		background-attachment: fixed;
 		min-height: 100vh;
+		margin: 0;
+		padding: 0;
+		/* Keep original body styles */
+		-ms-overflow-style: scrollbar;
+		color: #585858;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 16pt;
+		font-weight: 300;
+		line-height: 1.75;
 	}
+	
+	/* Mobile optimization */
+	@media screen and (max-width: 736px) {
+		body {
+			background-attachment: scroll;
+			background-size: 100% auto;
+			background-position: center top;
+			font-size: 14pt;
+		}
+	}
+	
+	@media screen and (max-width: 1680px) {
+		body {
+			font-size: 14pt;
+		}
+	}
+	
+	@media screen and (max-width: 1280px) {
+		body {
+			font-size: 12pt;
+		}
+	}
+	
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
